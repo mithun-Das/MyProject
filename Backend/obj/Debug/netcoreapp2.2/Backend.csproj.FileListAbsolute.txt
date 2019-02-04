@@ -12,3 +12,17 @@ E:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.AssemblyInfo.cs
 E:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.RazorTargetAssemblyInfo.cache
 E:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.dll
 E:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.pdb
+F:\MyProject\Backend\bin\Debug\netcoreapp2.2\Backend.deps.json
+F:\MyProject\Backend\bin\Debug\netcoreapp2.2\Backend.runtimeconfig.json
+F:\MyProject\Backend\bin\Debug\netcoreapp2.2\Backend.runtimeconfig.dev.json
+F:\MyProject\Backend\bin\Debug\netcoreapp2.2\Backend.dll
+F:\MyProject\Backend\bin\Debug\netcoreapp2.2\Backend.pdb
+F:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.csprojAssemblyReference.cache
+F:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.csproj.CoreCompileInputs.cache
+F:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.RazorAssemblyInfo.cache
+F:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.RazorAssemblyInfo.cs
+F:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.AssemblyInfoInputs.cache
+F:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.AssemblyInfo.cs
+F:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.RazorTargetAssemblyInfo.cache
+F:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.dll
+F:\MyProject\Backend\obj\Debug\netcoreapp2.2\Backend.pdb
