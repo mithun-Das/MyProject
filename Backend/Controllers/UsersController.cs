@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,12 +17,11 @@ namespace Backend.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetUser() {
+        public async Task<IActionResult> GetUser() {
 
-          //  var userList = _userService.GetUserList();
+            var userList =  await _userService.GetUserList();
 
-            //return Ok(userList);
-            return Ok("vdfff");
+            return Ok(userList);
         }
 
         //[HttpPost]
