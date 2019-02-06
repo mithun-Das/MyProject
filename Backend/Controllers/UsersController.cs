@@ -1,6 +1,8 @@
 using System;
+using System.IO;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 using Backend.Service;
@@ -24,11 +26,48 @@ namespace Backend.Controllers
             return Ok(userList);
         }
 
-        //[HttpPost]
-        // public IActionResult InsertUser(User user) {
+        [HttpPost("UploadPhoto")]
+        public IActionResult UploadPhoto(IFormFile file)
+        {
+           // return Ok(file);
+            var filePath =  Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Cleaned IT Return 2018.docx");
+            //var filePath = Path.GetTempFileName();
+
+             using (var stream = new FileStream(filePath, FileMode.Create))
+             {
+                file.CopyTo(stream);
+             }
+
+            //string fileName = ContenDispositionHeaderValue.Parse
+
+            return Ok(filePath);
+        }
+
+        [HttpPost("UploadPhotoAgain")]
+        public IActionResult UploadPhotoAgain(IFormCollection formData)
+        {
+            var myFiles = formData.Files;
+
+            foreach(var file in myFiles){
+
+                var filePath =  Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", formData.Keys(""));
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+            }
+
+            return Ok(filePath);
+        }
 
 
-        //     return Ok(user);
-        // } 
+        [HttpPost("TextUpload")]
+
+        public IActionResult TextPost([FromBody] string text)
+        {
+            return Ok(text);
+        }
+
     }
 }
