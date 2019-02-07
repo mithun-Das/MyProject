@@ -35,7 +35,7 @@ namespace Backend
            // services.AddDbContext<UserContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            //services.AddCors();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,10 +53,10 @@ namespace Backend
 
             app.UseHttpsRedirection();
             app.UseMvc();
-            // app.UseCors(builder => builder.AllowAnyOrigin()
-            //                               .AllowAnyHeader()
-            //                               .AllowAnyMethod()
-            //             );
+            app.UseCors(builder => builder.AllowAnyOrigin()
+                                          .AllowAnyHeader()
+                                          .AllowAnyMethod()
+                        );
         }
     }
 }
